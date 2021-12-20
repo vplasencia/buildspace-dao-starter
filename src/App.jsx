@@ -195,7 +195,7 @@ const App = () => {
     return (
       <div className="landing">
         <h1>Welcome to FounderDAO</h1>
-        <p className="text">FounderDAO is a DAO for startup founders who want to create the future of the world</p>
+        <p className="text">A DAO for startup founders who want to create the future of the world</p>
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect your wallet
         </button>
