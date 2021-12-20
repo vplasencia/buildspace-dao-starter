@@ -4,7 +4,7 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4312b4;
+  background-color: #91dde2;
   color: #fff;
   overflow-x: hidden;
 }
@@ -15,7 +15,20 @@ body {
 
 h1 {
   font-size: 3rem;
+  background: rgb(37, 25, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 25, 227, 1) 0%,
+    rgba(205, 63, 229, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+h2 {
+  color: rgb(37, 25, 227);
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -93,7 +106,7 @@ h1 {
 
 .member-page form h5 {
   margin-top: 0;
-  color: #7700ee;
+  color: rgb(37, 25, 227);
 }
 
 .member-page form .card > div {
@@ -116,7 +129,11 @@ h1 {
 
 button {
   cursor: pointer;
-  background-color: rgb(152, 70, 190);
+  background-image: linear-gradient(
+    90deg,
+    rgb(37, 25, 227) 0%,
+    rgb(205, 63, 229) 100%
+  );
   color: #fff;
   border: none;
   font-weight: bold;
@@ -128,14 +145,22 @@ button {
 }
 
 button:hover {
-  background-color: #121212;
+  background: #121212;
 }
 
 button:focus {
-  background-color: rgb(37, 36, 37);
+  background: rgb(37, 36, 37);
 }
 
 button:disabled {
   opacity: 0.8;
   pointer-events: none;
+}
+
+
+.text {
+  margin: 0 0 4rem 0;
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
