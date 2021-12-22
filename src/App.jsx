@@ -7,6 +7,9 @@ import { useWeb3 } from "@3rdweb/hooks";
 
 import { ethers } from "ethers";
 
+const OPENSEA_LINK =
+  "https://testnets.opensea.io/assets/0x3e7d5d782283db102869209d00057fe5f5371175/0";
+
 // We instatiate the sdk on Rinkeby.
 const sdk = new ThirdwebSDK("rinkeby");
 
@@ -195,7 +198,19 @@ const App = () => {
     return (
       <div className="landing">
         <h1>Welcome to FounderDAO</h1>
-        <p className="text">A DAO for startup founders who want to create the future of the world</p>
+        <p className="text">
+          A DAO for startup founders who want to create the future of the world
+        </p>
+        <div className="linkBtnWrapper">
+          <a
+            href={OPENSEA_LINK}
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            className="linkBtn"
+          >
+            🌊 View FounderDAO NFT on OpenSea
+          </a>
+        </div>
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect your wallet
         </button>
@@ -207,6 +222,16 @@ const App = () => {
     return (
       <div className="member-page">
         <h1>FounderDAO Member Page</h1>
+        <div className="linkBtnWrapper">
+          <a
+            href={OPENSEA_LINK}
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            className="linkBtn"
+          >
+            🌊 View FounderDAO NFT on OpenSea
+          </a>
+        </div>
         <div>
           <div>
             <h2>Member List</h2>
@@ -379,6 +404,16 @@ const App = () => {
   return (
     <div className="mint-nft">
       <h1>Mint your free FounderDAO Membership NFT</h1>
+      <div className="linkBtnWrapper">
+        <a
+          href={OPENSEA_LINK}
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          className="linkBtn"
+        >
+          🌊 View FounderDAO NFT on OpenSea
+        </a>
+      </div>
       <button disabled={isClaiming} onClick={() => mintNft()}>
         {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
       </button>

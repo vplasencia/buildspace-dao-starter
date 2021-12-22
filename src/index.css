@@ -157,6 +157,25 @@ button:disabled {
   pointer-events: none;
 }
 
+.linkBtnWrapper {
+  margin: 0 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkBtn {
+  color: rgb(37, 25, 227);
+  text-decoration: none;
+}
+
+.linkBtn:hover {
+  text-decoration: underline;
+}
+
+.linkBtn:focus {
+  text-decoration: underline;
+}
 
 .text {
   margin: 0 0 4rem 0;
