@@ -234,7 +234,7 @@ const App = () => {
         </div>
         <div>
           <div>
-            <h2>Member List</h2>
+            <h2>Member List <span>({memberList.length})</span></h2>
             <table className="card">
               <thead>
                 <tr>
